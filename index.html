@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="mid__img__slider">
+      <div class="content__wrapper__headings">
+        <h5>OUR GALLERY</h5>
+        <h1>A Glimps Into Our Work,</h1>
+        <h1>Our People, Our Craft</h1>
+      </div>
+      <div class="content__wrapper">
+        <div class="selection">
+          <label for="itemNumber"
+            >Choose the number of items in the slider:
+          </label>
+          <input type="number" value="3" min="1" max="6" id="itemNumber" />
+          <p id="itemNumberMess"></p>
+        </div>
+        <div class="slider">
+          <div class="slider__wrapper" id="list">
+            <div class="slider__item">
+              <div class="slider__content">
+                <div class="slider__image">
+                  <img src="img\1.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="slider__item">
+              <div class="slider__content active">
+                <div class="slider__image">
+                  <img src="img\2.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="slider__item">
+              <div class="slider__content">
+                <div class="slider__image">
+                  <img src="img\3.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="slider__item">
+              <div class="slider__content">
+                <div class="slider__image">
+                  <img src="img\4.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="slider__item">
+              <div class="slider__content">
+                <div class="slider__image">
+                  <img src="img\5.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slider__controls">
+            <button class="slider__left" type="button" id="arrowLeft">
+              <span>Back</span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25">
+                <path
+                  d="M24 12.001H2.914l5.294-5.295-.707-.707L1 12.501l6.5 6.5.707-.707-5.293-5.293H24v-1z"
+                  data-name="Left"
+                />
+              </svg>
+            </button>
+            <button class="slider__right" type="button" id="arrowRight">
+              <span>Next</span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25">
+                <path
+                  d="m17.5 5.999-.707.707 5.293 5.293H1v1h21.086l-5.294 5.295.707.707L24 12.499l-6.5-6.5z"
+                  data-name="Right"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="content__wrapper__button">
+        <button>View Full Gallery</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
