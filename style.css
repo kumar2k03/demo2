@@ -12,16 +12,16 @@ body {
   background-color: rgb(227, 224, 204);
 }
 
-.content__wrapper__headings{
+.content__wrapper__headings {
   padding: 50px 0px 0px 0px;
   text-align: center;
 }
 
-.content__wrapper__headings h5{
+.content__wrapper__headings h5 {
   color: rgb(159, 138, 19);
   font-weight: 100;
 }
-.content__wrapper__headings h1{
+.content__wrapper__headings h1 {
   color: #074041;
   margin: 0;
   font-weight: 100;
@@ -127,16 +127,35 @@ body {
   color: white;
 }
 .slider__controls {
-  top: calc(50% - 50px);
-  left: -50px;
+  top: calc(50% - 40px);
+  left: 28%;
   position: absolute;
   display: flex;
-  width: 110%;
+  width: 44%;
   justify-content: space-between;
 }
 .slider__controls button {
-  background-color: transparent;
+  width: 55px;
+  height: 55px;
+  background: transparent;
   border: none;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slider__controls svg {
+  width: 44px;
+  height: 44px;
+}
+.slider__controls button path {
+  fill: rgb(160, 138, 13);
+  transition: 0.3s ease;
+}
+
+.slider__controls button:hover path {
+  fill: #074041;
 }
 .slider__controls button span {
   color: rgb(160, 138, 13);
@@ -156,6 +175,28 @@ body {
 .slider__controls button:hover {
   color: #074041;
   transition: all 0.7s ease;
+}
+.slider__controls button {
+  width: 55px;
+  height: 55px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider__controls i {
+  font-size: 40px;              /* controls icon size */
+  font-weight: 100;
+  color: rgb(160, 138, 13);     /* arrow color */
+  transition: 0.3s ease;
+}
+
+.slider__controls button:hover i {
+  color: #074041;
 }
 .slider__controls button:hover path,
 .slider__controls button:hover span {
@@ -189,7 +230,7 @@ body {
   outline: none;
 }
 
-.content__wrapper__button{
+.content__wrapper__button {
   padding: 0px 0px 40px;
   align-items: center;
   display: flex;
@@ -197,7 +238,7 @@ body {
   justify-content: center;
 }
 
-.content__wrapper__button button{
+.content__wrapper__button button {
   border: none;
   background-color: #628266;
   color: #d7d2d2;
@@ -206,7 +247,7 @@ body {
   transition: 0.3s ease;
 }
 
-.content__wrapper__button button:hover{
+.content__wrapper__button button:hover {
   background-color: #507455;
 }
 
